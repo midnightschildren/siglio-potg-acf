@@ -51,12 +51,17 @@ get_header(); ?>
 		<div class="footnote left-sidebar"><?php echo apply_filters('the_content', get_field('bookdetails')); ?></div>
         
         <?php // Limited Edition
-          $limited = get_field('limited_edition_link:to_link_href');
-          if( !empty($limited) ) :
-        ?>
+          $limited = get_field('limited_edition_link');
+          if( $limited ) :
+       
+          // override $post
+          $post = $limited;
+          setup_postdata( $post ); 
+
+          ?>
         
-		<p class="led left-sidebar"><a href="<?php the_field('limited_edition_link:to_link_href','http://yoursite.com/default/page/');?>">There's also a Limited Edition</a></p>
-        
+		<p class="led left-sidebar"><a href="<?php the_permalink(); ?>">There's also a Limited Edition</a></p>
+          <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
         <?php endif; ?>
 
         <?php // Blurb box
@@ -80,14 +85,14 @@ get_header(); ?>
 		<?php the_content(); ?>
         
 		<?php // pdf press release
-          $pdfpressrelease = get_field('pdf_press_release');
-          $image_id = get_field('pdf_press_release:raw');
-          if( !empty($pdfpressrelease) ) :
+          $file = get_field('pdf_press_release');
+          if( $file ) {
+          $url = wp_get_attachment_url( $file );  
 		?>
 		<div class="pdf-press-release">
-		<a target="_blank" href="<?php echo wp_get_attachment_url($image_id); ?>" class="press-release-link">Read the complete PDF Press Release</a>.
+		<a target="_blank" href="<?php echo $url; ?>" class="press-release-link">Read the complete PDF Press Release</a>.
 		</div>
-		<?php endif; ?>
+		<?php } ?>
 
 		<?php echo apply_filters('the_content', get_field('bookcontent')); ?>
 
