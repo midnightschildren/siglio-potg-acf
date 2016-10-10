@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../fonts/modernpics-webfont.eot');
+    src: url('../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/modernpics-webfont.woff') format('woff'),
+         url('../fonts/modernpics-webfont.ttf') format('truetype'),
+         url('../fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('../fonts/Crimson-Roman-webfont.eot');
+    src: url('../fonts/Crimson-Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Crimson-Roman-webfont.woff') format('woff'),
+         url('../fonts/Crimson-Roman-webfont.ttf') format('truetype'),
+         url('../fonts/Crimson-Roman-webfont.svg#Crimson') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('../fonts/Crimson-Bold-webfont.eot');
+    src: url('../fonts/Crimson-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Crimson-Bold-webfont.woff') format('woff'),
+         url('../fonts/Crimson-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Crimson-Bold-webfont.svg#Crimson') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('../fonts/Crimson-Italic-webfont.eot');
+    src: url('../fonts/Crimson-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Crimson-Italic-webfont.woff') format('woff'),
+         url('../fonts/Crimson-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/Crimson-Italic-webfont.svg#Crimson') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#OpenSans') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Variables
+ * For more examples see bootstrap/variables.less
+------------------------------------------------------------------------------*/
+// Grid
+// -------------------------
+@gridColumns:           16;
+@gridColumnWidth:       40px;
+@gridGutterWidth:       20px;
+@gridRowWidth:          (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:  6.382978723%;
+@fluidGridGutterWidth:  2.127659574%;
+
+// Colors
+// -------------------------
+@bodyBackground:        #ffffff;
+@textColor:             #000000;
+@secondaryTextColor:    #e17f7f;
+@lightTextColor:        #cc0000;
+@darkTextColor:         #4c4c4c;
+@codeColor:             @textColor + #033;
+@linkColor:             #cc0000;
+@linkColorHover:        #626262;
+@gradientLightStart:    #e0e0e0;
+@gradientLightStop:     #c6c6c6;
+@gradientDarkStart:     #252525;
+@gradientDarkStop:      #0a0a0a;
+
+// Typography
+// -------------------------
+@sansFontFamily:        "OpenSans", Helvetica, sans-serif;
+@sansSemiFontFamily:    "OpenSansSemibold", Helvetica, sans-serif;
+@serifFontFamily:       "Crimson", Georgia, serif;
+@monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+
+@baseFontSize:          12px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        18px;
+@altFontFamily:         @serifFontFamily;
+
+@headingsFontFamily:    @sansFontFamily;
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+// Forms
+// -------------------------
+@inputBackground:       #FFF;
+@inputTextColor:        #444;
+
+// Misc
+// -------------------------
+@boxShadowDefault:      0px 0px 1px #888;
+@boxShadowInner:        inset 0px 0px 1px #fff;
+@boxShadowGlow:         0px 0px 5px #888;
+
+/* Global 
+------------------------------------------------------------------------------*/
+body { background: @bodyBackground }
+
+/* Header 
+------------------------------------------------------------------------------*/
+.alpha { margin-left: 0 }
+.omega { margin-right: 0 }
+
+/* Header 
+------------------------------------------------------------------------------*/
+#header {
+  height: 120px;
+  margin-bottom: 35px;
+}
+
+.dark_navigation #navigation {
+  #gradient > .vertical(@gradientDarkStart, @gradientDarkStop);
+  .box-shadow(@boxShadowDefault);
+  clear: both;
+  display: block;
+  float: left;
+  margin: 0px;
+  width: 100%;
+}
+.dark_navigation #navigation a {
+  color: #fff;
+}
+.dark_navigation #navigation li li a {
+  color: #434343;
+}
+.light_navigation #navigation {
+  background: #222;
+  #gradient > .vertical(#e0e0e0, #c6c6c6);
+  .box-shadow(@boxShadowDefault);
+  text-shadow: #fff 0px 1px 1px;
+  clear: both;
+  display: block;
+  float: left;
+  margin: 0px;
+  width: 100%;
+}
+.light_navigation #navigation a {
+  color: #848484;
+}
+.light_navigation #navigation li li a {
+  color: #434343;
+}
+.hide_navigation #navigation {
+  display: none;
+}
+
+
+
+/* navigation
+------------------------------------------------------------------------------*/
+#navigation ul {
+  font-size: @baseFontSize;
+  list-style: none;
+  margin: 0px 0px 0px 10px;
+  padding-left: 0;
+}
+#navigation li {
+  float: left;
+  position: relative;
+}
+#navigation a {
+  font-weight: bolder;
+  display: block;
+  line-height: 2em;
+  padding:none;
+  text-decoration: none;
+  .caret {
+    margin-top: 10px;
+  }
+}
+#navigation ul ul {
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  width: 188px;
+  z-index: 99999;
+}
+#navigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+#navigation ul ul a {
+  background: #f9f9f9;
+  border-bottom: 1px dotted #ddd;
+  color: #444;
+  font-size: @baseFontSize;
+  font-weight: normal;
+  height: auto;
+  line-height: 1.4em;
+  padding: 10px 10px;
+  width: 168px;
+}
+#navigation li:hover > a, #navigation ul ul :hover > a, #navigation a:focus {
+  background: #efefef;
+}
+#navigation li:hover > a, #navigation a:focus {
+  #gradient > .vertical(#f9f9f9, #e5e5e5);
+  color: #373737;
+}
+#navigation ul li:hover > ul {
+  display: block;
+}
+#navigation .current_page_item > a, #navigation .current_page_ancestor > a {
+  font-weight: bold;
+}
+/* Entries */
+.entry {
+}
+/* Sidebar */
+#sidebar {
+  -moz-box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  box-shadow: inset 0 0 5px #fff;
+}
+#pages, #archives, #categories, #feeds, #sidebarmeta, #blogroll {
+  margin: 0px 0px 0px 0px;
+}
+/* post */
+.postdate {
+  position: absolute;
+  margin-left: -71px;
+  padding: 5px;
+  #gradient > .vertical(@gradientLightStart, @gradientLightStop);
+  width: 40px;
+}
+.post, .type-post, .type-page {
+  padding: 20px 20px 10px 20px;
+  margin: 15px 0px 15px 0px;
+  background: #FFF;
+  border: solid 1px #e3e3e3;
+  .box-shadow(@boxShadowInner);
+}
+.swpf-img img {
+  border: 5px solid #fff;
+  .box-shadow(@boxShadowGlow);
+  overflow: hidden;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignleft {
+  float: left;
+  margin: 0px 20px 20px 0px;
+  clear: both;
+}
+.alignright {
+  float: right;
+  margin: 0px 0px 20px 20px;
+  clear: both;
+}
+.attachment-post-thumbnail {
+  float: left;
+  min-width: inherit;
+  border: 5px solid #fff;
+  .box-shadow(@boxShadowGlow);
+  overflow: hidden;
+  margin: 0px 20px 20px 0px;
+}
+/*Comment Structure*/
+#comment-block {
+  background: url(images/comment-block-bg.png) no-repeat top center;
+}
+#comments {
+  margin:20px 0px 10px 0px;
+  padding:20px 0px 10px 0px;
+}
+/* Footer */
+#footer {
+  margin: 0px 0px 30px 0px;
+  padding: 30px;
+  background-color: #fff;
+  color: @textColor;
+}
+/* Meta */
+
+.time {
+  background: url(images/calender-icon.gif) no-repeat top left;
+  margin: 0 0 0 3px;
+  padding: 0 0 2px 18px;
+}
+.post-comments {
+  background: url(images/comment-icon.gif) no-repeat top left;
+  margin: 0 0 0 3px;
+  padding: 0 0 2px 18px;
+}
+.categories {
+  background: url(images/file-icon.gif) no-repeat center left;
+  margin: 0 0 0 2px;
+  padding: 0 0 3px 20px;
+}
+.tags {
+  background: url(images/tag-icon.gif) no-repeat top left;
+  margin: 0 0 0 3px;
+  padding: 0 0 4px 18px;
+}
+/* Misc */
+.sticky {
+}
+.gallery-caption {
+}
+.bypostauthor {
+}
+.wp-caption{
+  border: 0px solid #ddd;
+  text-align: center;
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wp-caption-text {
+  font-size: 10px;
+  margin-text;
+}
+
+.wp-caption img {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+.wp-caption-dd {
+  font-size: @baseFontSize * .8;
+  line-height: 17px;
+  padding: 0 4px 5px;
+  margin: 0;
+}
+/* Pagination */
+.pagenavi {
+  margin: 0 auto 20px auto;
+  width:400px;
+  padding: 5px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  .box-shadow(@boxShadowInner);
+}
+.pagenavi a {
+  padding: 5px 6px 4px 6px;
+  margin: 3px;
+  text-decoration: none;
+  color: #666;
+  background-color: inherit;
+}
+.pagenavi a:hover {
+  color: #000;
+}
+.pagenavi span.pages {
+  padding: 5px 6px 4px 6px;
+  margin: 3px;
+  color: #333;
+  font-weight:bold;
+  background-color: inherit;
+}
+.pagenavi span.current {
+  padding: 5px 6px 4px 6px;
+  margin: 3px;
+  font-weight:bold;
+  color: #fff;
+  background-color: #ccc;
+}
+
+/* Picto Icons */
+.font-icon {
+  font-family: 'ModernPictogramsNormal';
+}

@@ -1,0 +1,237 @@
+/* Theme Name: Simon WP Framework */
+/* Typography Framework */
+body {
+	font: @baseFontSize/1em @serifFontFamily;
+}
+/* Links */
+a {
+	color: @linkColor;
+	text-decoration: none;
+}
+a:focus, a:active, a:hover {
+	color: @linkColorHover;
+	text-decoration: none;
+}
+h2, h3, h4, h5, h6 {
+	padding: 0px 0px 0px 0px;
+	font-weight: normal;
+}
+#header h1 {
+	font-weight:normal;
+	margin: 45px 0px 0px 0px;
+	padding: 10px 20px 10px 0px;
+	border-right: none;
+	float: left;
+	
+}
+#header h1 a {
+	color: black;
+	font-size:30px;
+	letter-spacing:-2.5px;
+	text-decoration: none;
+}
+#header h1 a:hover {
+	color: @textColor;
+	text-decoration: none;
+}
+.description {
+	color: @secondaryTextColor;
+	float: left;
+	margin: 55px 0px 0px 0px;
+	padding: 0px 0px 0px 20px;
+}
+.bread-crumb {
+	color: @secondaryTextColor;
+	font-size: 10px;
+	background: @bodyBackground;
+	margin: 0px 0px 20px 0px;
+	padding: 5px 5px 5px 10px;
+}
+.postdate {
+	text-align: center;
+	text-shadow: @secondaryTextColor 0px 1px 0px;
+}
+.postmonth {
+	color: @lightTextColor;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight:bolder;
+	padding: 0px;
+	margin: 0px;
+}
+.postday {
+	color: @lightTextColor;
+	font-weight:bolder;
+	font-size: 25px;
+	padding: 0px;
+	margin: 0px;
+}
+h1 {
+	font-size: @baseFontSize * 2.5;
+	line-height: 1.2em;
+	color: @TextColor;
+	letter-spacing:0px;
+	padding: 10px 0px 10px 0px;
+	font-weight:normal;
+	margin: 0px;
+}
+h2 {
+	font-size: @baseFontSize * 5/3;
+	padding: 0px;
+	line-height: @baseFontSize * 2;
+	margin: 0px 0px 5px 0px;
+	color: @TextColor;
+	letter-spacing:0px;
+	margin:0px;
+	
+}
+h3 {
+	font-size: @baseFontSize * 7/6;
+	font-family: @sansSemiFontFamily;
+	color: @TextColor;
+	letter-spacing:0px;
+	font-weight: normal;
+	line-height: 20px;
+}
+h4 {
+	font-size: @baseFontSize * 11/6;
+	font-family: @serifFontFamily;
+	color: @lightTextColor;
+	letter-spacing:0px;
+}
+h5 {
+	font-size: @baseFontSize;
+	text-transform: uppercase;
+	color: @darkTextColor;
+	font-weight:normal;
+	font-family: @sansSemiFontFamily;
+}
+h6 {
+	font-size: @baseFontSize;
+	color: @secondaryTextColor;
+	font-family: @sansSemiFontFamily;
+	letter-spacing:0px;
+	font-weight:normal;
+}
+p {
+	font-size: @baseFontSize;
+	letter-spacing:0px;
+	color: @textColor;
+	line-height: 18px;
+	margin: 0px;
+	padding: 0px 0px 1.2em 0px;
+	font-family: @sansFontFamily;
+}
+a {
+	color: @linkColor;
+}
+
+pre {
+	font-size: @baseFontSize * .9;
+	color: @darkTextColor;
+	letter-spacing:0;
+	background-color: @bodyBackground;
+}
+code {
+	font-size: @baseFontSize * .9;
+	color: @codeColor;
+	letter-spacing:0;
+	background-color: @bodyBackground;
+	padding:2px;
+}
+blockquote {
+	font-style:italic;
+	color: @textColor;
+	margin:5px;
+	padding: 10px 10px 0px 30px;
+	background: url(../images/quotes.jpg) no-repeat top left;
+	font-family: @serifFontFamily;
+}
+em {
+	font-style:italic;
+}
+/* Sidebar */
+.sidebaritem {
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 1px dotted #ccc;
+}
+#sidebar ul {
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;
+}
+.no-widgets h2 {
+	margin: 15px 0px 0px 0px;
+}
+#sidebar ul li {
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+}
+#sidebar #h3 {
+	padding: 20px;
+	margin: 0px;
+}
+/* Post */
+.post ul, .post ol {
+	padding: 0px 0px 10px 30px;
+}
+.postmetadata {
+	border-top: dotted 1px #e3e3e3;
+	padding: 15px 0px 5px 0px;
+	color: @secondaryTextColor;
+	font-size: 10px;
+	line-height: 18px;
+	text-transform: capitalize;
+	clear: both;
+}
+/* Comment */
+#comments-title:before {
+	content:"Comments: ";
+}
+#comments-title {
+	padding: 30px 0px 0px 0px;
+	margin: 0px;
+	text-align: center!important;
+}
+.comment-author {
+	font-weight:bolder;
+	font-size: 14px;
+	font-style:italic;
+	text-transform: capitalize;
+	margin: 20px 0px 5px 0px;
+	padding: 5px;
+	background: #e3e3e3;
+}
+#comment-block {
+	margin: 0px 0px 30px 0px;
+}
+#comment-block ol {
+	padding:20px;
+	margin:10px 0px 30px 0px;
+	padding: 0px 0px 0px 40px;
+	font-size: 16px;
+}
+#comment-block ol ul {
+	list-style-type: none;
+	padding: 0px 0px 0px 40px;
+}
+a.comment-reply-link {
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#444!important;
+	text-shadow:0 1px 0 #eee;
+	cursor:pointer;
+	#gradient > .veritcal(#aaa, #cecece);
+	border:0px;
+	padding:2px 13px;
+	margin:0;
+	width:70px;
+	height:auto;
+}
+.commentmetadata {
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+}
+#comment-block a {
+	color: #000;
+}
