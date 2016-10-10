@@ -57,8 +57,8 @@
         'post_type' => 'book',
         'post_status' => 'publish',
         'showposts' => 200,
-		'posts_per_page' => 100,
-		'order' => 'ASC',
+		    'posts_per_page' => 100,
+		    'order' => 'ASC',
         'orderby' => 'meta_value',
         'meta_key' => $order 
       );

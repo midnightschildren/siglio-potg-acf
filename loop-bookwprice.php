@@ -21,7 +21,7 @@
         $authorData = get_field('book_author:to_array', 'get_post'); 
         $author = isset($authorData[0]) ? ' by ' . $authorData[0] : false;
         $authorName = isset($author) ? $author['name'] : '';
-		$authorName2 = get_field('book_author');
+		    $authorName2 = get_field('book_author');
         $title = get_field('book_title');
         $imgTitle = $title . $authorName;
       ?>

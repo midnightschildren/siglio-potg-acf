@@ -18,11 +18,11 @@
   <div <?php post_class('grid_3'.$oddClass) ?>>
     
       <?php
-        $authorData = get_custom_field('book_author:to_array', 'get_post'); 
+        $authorData = get_field('book_author:to_array', 'get_post'); 
         $author = isset($authorData[0]) ? ' by ' . $authorData[0] : false;
         $authorName = isset($author) ? $author['name'] : '';
-		$authorName2 = get_custom_field('book_author');
-        $title = get_custom_field('book_title');
+		    $authorName2 = get_field('book_author');
+        $title = get_field('book_title');
         $imgTitle = $title . $authorName;
       ?>
 
